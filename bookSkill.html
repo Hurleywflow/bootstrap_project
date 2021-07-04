@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hurleywflow - the Book</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-md navbar-light">
+				<div class="container-xxl">
+					<a href="#intro" class="navbar-brand">
+						<i class="bi bi-book-half"></i>
+						<span class="fw-bold text-secondary">Hurleywflow - The eBook</span>
+					</a>
+					<!-- toggle button for mobible nav -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#main-nav"
+						aria-expanded="false"
+						aria-control="main-nav"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- navbar link -->
+					<div
+						class="collapse navbar-collapse justify-content-end align-center"
+						id="main-nav"
+					>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#topics">About The Book</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#reviews">Reviews</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contacts">Contact</a>
+							</li>
+							<li class="nav-item d-md-none">
+								<a class="nav-link" href="#pricing">Pricing</a>
+							</li>
+							<li class="nav-item ms-2 d-none d-md-inline">
+								<a class="btn btn-secondary" href="#pricing">Buy Now</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- main image and intro text -->
+			<section id="intro">
+				<div class="container-lg">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-md-5 text-center text-md-start">
+							<h1>
+								<div class="display-2">Black-Belt</div>
+								<div class="dispaly-5 text-muted">Your Coding Skills</div>
+							</h1>
+							<p class="lead my-4 text-muted">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+								unde?
+							</p>
+							<a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+              <!-- open sidebar/offcanvas -->
+              <a href="#sidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="d-block mt-3">
+                Explore my other books
+              </a>
+						</div>
+						<div class="col-md-5 text-center d-none d-md-block">
+              <!-- tooltip -->
+              <span class="tt" data-bs-placement="bottom" title="Hurley Book Cover">
+
+                <img
+                src="./img/book-cover.svg"
+                class="img-fluid"
+                  alt="ebook cover"
+                />
+              </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+      <!-- offcanvas -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-lable">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-tittle" id="sidebar-label">My Other Books</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-lable="Close">
+
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laudantium, eveniet ipsam atque debitis animi pariatur nemo? Optio porro non, unde facilis aperiam harum assumenda consectetur alias molestias, voluptas tempora.</p>
+          <!-- dropdown -->
+          <div class="dropdown mt-3">
+            <button id="book-dropdown  " class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Choose a book tittle
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" class="dropdown-item">Become a React supperhero</a>
+              </li><li>
+                <a href="#" class="dropdown-item">Conquering Vue.js</a>
+              </li><li>
+                <a href="#" class="dropdown-item">Levelling up your Next.js</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+			<!-- pricing plan -->
+			<section id="pricing" class="bg-light mt-5">
+				<div class="container-lg">
+					<div class="text-center">
+						<h2>Pricing Plans</h2>
+						<p class="lead text-muted">Choose a pricing plan to suit you.</p>
+					</div>
+					<div class="row my-5 align-items-center justify-content-center g-0">
+						<div class="col-8 col-lg-4 col-xl-3">
+							<div class="card border-0">
+								<div class="card-body text-center py-4">
+									<h4 class="card-tittle">Starter Editions</h4>
+									<p class="lead card-subtitle">eBook download only</p>
+									<p class="display-5 my-4 text-primary fw-bold">$19.99</p>
+									<p class="card-text mx-5 text-muted d-none d-lg-block">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Mollitia, eum.
+									</p>
+									<a href="#" class="btn btn-outline-primary btn-lg mt-3"
+										>Buy Now</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-9 col-lg-4">
+							<div class="card border-primary border-2">
+								<div class="card-header text-center text-primary">
+									Most Popular
+								</div>
+								<div class="card-body text-center py-5">
+									<h4 class="card-tittle">Complete Editions</h4>
+									<p class="lead card-subtitle">eBook download & all update</p>
+									<p class="display-4 my-4 text-primary fw-bold">$29.99</p>
+									<p class="card-text mx-5 text-muted d-none d-lg-block">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Mollitia, eum.
+									</p>
+									<a href="#" class="btn btn-outline-primary btn-lg mt-3"
+										>Buy Now</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-8 col-lg-4 col-xl-3">
+							<div class="card border-0">
+								<div class="card-body text-center py-4">
+									<h4 class="card-tittle">Ultimate Editions</h4>
+									<p class="lead card-subtitle">download, update & extras</p>
+									<p class="display-5 my-4 text-primary fw-bold">$39.99</p>
+									<p class="card-text mx-5 text-muted d-none d-lg-block">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Mollitia, eum.
+									</p>
+									<a href="#" class="btn btn-outline-primary btn-lg mt-3"
+										>Buy Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- topic at a glance -->
+			<section id="topics">
+				<div class="container-md">
+					<div class="text-center">
+						<h2>Inside the Book…</h2>
+						<p class="lead text-muted">
+							A quick glance at the topic you will learn
+						</p>
+					</div>
+					<div class="row my-5 g-5 justify-content-around align-items-center">
+						<div class="col-6 col-lg-4">
+							<img
+								src="./img/book-reading-time.svg"
+								alt="ebook"
+								class="img-fluid"
+							/>
+						</div>
+						<!-- accordion  -->
+						<div class="col-lg-6">
+							<div class="accordion" id="chapters">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="heading-1">
+										<button
+											class="accordion-button"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#chapter-1"
+											aria-expanded="true"
+											aria-controls="chapter-1"
+										>
+											Chapter 1 - Your First Web Page
+										</button>
+									</h2>
+									<div
+										id="chapter-1"
+										class="accordion-collapse collapse show"
+										aria-labelledby="heading-1"
+										data-bs-parent="#chapters"
+									>
+										<div class="accordion-body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Illo et ratione culpa maxime molestias odio at ab fuga
+												temporibus tempora.
+											</p>
+											<p>
+												Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. Inventore, nisi. Eius quaerat laborum nobis, rem
+												laudantium obcaecati saepe. Autem sapiente doloribus
+												mollitia laboriosam culpa earum accusamus nisi nemo ab
+												sed.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="heading-2">
+										<button
+											class="accordion-button"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#chapter-2"
+											aria-expanded="false"
+											aria-controls="chapter-2"
+										>
+											Chapter 2 - Mastering Css
+										</button>
+									</h2>
+									<div
+										id="chapter-2"
+										class="accordion-collapse collapse"
+										aria-labelledby="heading-2"
+										data-bs-parent="#chapters"
+									>
+										<div class="accordion-body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Illo et ratione culpa maxime molestias odio at ab fuga
+												temporibus tempora.
+											</p>
+											<p>
+												Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. Inventore, nisi. Eius quaerat laborum nobis, rem
+												laudantium obcaecati saepe. Autem sapiente doloribus
+												mollitia laboriosam culpa earum accusamus nisi nemo ab
+												sed.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="heading-3">
+										<button
+											class="accordion-button"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#chapter-3"
+											aria-expanded="false"
+											aria-controls="chapter-3"
+										>
+											Chapter 3 - Storing Data (Firebase Database)
+										</button>
+									</h2>
+									<div
+										id="chapter-3"
+										class="accordion-collapse collapse"
+										aria-labelledby="heading-3"
+										data-bs-parent="#chapters"
+									>
+										<div class="accordion-body">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Illo et ratione culpa maxime molestias odio at ab fuga
+												temporibus tempora.
+											</p>
+											<p>
+												Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. Inventore, nisi. Eius quaerat laborum nobis, rem
+												laudantium obcaecati saepe. Autem sapiente doloribus
+												mollitia laboriosam culpa earum accusamus nisi nemo ab
+												sed.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Reviews List -->
+			<section id="reviews" class="bg">
+				<div class="cotainer-lg">
+					<div class="text-center">
+						<h2><i class="bi bi-stars"></i>Book Reviews</h2>
+						<p class="lead">What my students have said about the book…</p>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="list-group my-3">
+								<div class="list-group-item py-3">
+									<div class="pb-2">
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
+									</div>
+									<h5 class="mb-1">A must buy for every aspiring web dev</h5>
+									<p class="mb-1">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Doloremque, distinctio velit iste illum et quisquam iusto
+										quam dolore sit vel, esse reiciendis fugiat ut. Sed.
+									</p>
+									<small>Reviews buy Hurleywflow</small>
+								</div>
+								<div class="list-group-item py-3">
+									<div class="pb-2">
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
+									</div>
+									<h5 class="mb-1">A must buy for every aspiring web dev</h5>
+									<p class="mb-1">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Doloremque, distinctio velit iste illum et quisquam iusto
+										quam dolore sit vel, esse reiciendis fugiat ut. Sed.
+									</p>
+									<small>Reviews buy Hurleywflow</small>
+								</div>
+								<div class="list-group-item py-3">
+									<div class="pb-2">
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-half"></i>
+									</div>
+									<h5 class="mb-1">A must buy for every aspiring web dev</h5>
+									<p class="mb-1">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Doloremque, distinctio velit iste illum et quisquam iusto
+										quam dolore sit vel, esse reiciendis fugiat ut. Sed.
+									</p>
+									<small>Reviews buy Hurleywflow</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- form-control, form-label, form-select, input-group, input-group-text… -->
+			<section id="contacts">
+				<div class="container-lg">
+					<div class="text-center">
+						<h2>Get in touch</h2>
+						<div class="lead">
+							Question to ask? Fill out the form to contact me directly…
+						</div>
+					</div>
+					<div class="row justify-content-center my-5">
+						<div class="col-lg-6">
+							<form action="">
+								<label for="email" class="form-label">Email address:</label>
+								<div class="mb-4 input-group">
+									<span class="input-group-text">
+										<i class="bi bi-envelope-fill"></i>
+									</span>
+									<input
+										type="email"
+										placeholder="e.g.hurleywflow@gmail.com"
+										class="form-control"
+										id="eamil"
+									/>
+                  <!-- tooltip -->
+                  <span class="input-group-text ">
+                    <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+								</div>
+								<label for="name" class="form-label">Name:</label>
+								<div class="input-group mb-4">
+									<span class="input-group-text">
+										<i class="bi bi-person-fill"></i>
+									</span>
+									<input
+										type="text"
+										placeholder="e.g.Hurley"
+										class="form-control"
+										id="name"
+									/>
+                   <!-- tooltip -->
+                  <span class="input-group-text ">
+                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really..">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+								</div>
+								<label for="subject" class="form-label"
+									>What is your queston about?</label
+								>
+								<div class="input-group mb-4">
+									<span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill"></i>
+									</span>
+									<select class="form-select" id="subject">
+										<option value="pricing" selected>Pricing query</option>
+										<option value="pricing">Content query</option>
+										<option value="content">Other query</option>
+									</select>
+                   <!-- tooltip -->
+                  <span class="input-group-text ">
+                    <span class="tt" data-bs-placement="bottom" title="Choose your query you want us answer">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+								</div>
+								<div class="form-floating mb-4 mt-5">
+									<textarea
+										id="query"
+										style="height: 140px"
+										class="form-control"
+									></textarea>
+									<label for="query">Your query…</label>
+								</div>
+								<div class="mb-4 text-center">
+									<button class="btn btn-secondary" type="submit">
+										Submit
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+      <!-- get-update/modal trigger -->
+      <section class="bg-light">
+        <div class="container">
+          <div class="text-center">
+            <h2>Stay in the loop</h2>
+            <p class="lead">Get the latest updates as they happen…</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <p class="text-muted my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fuga natus itaque accusamus non enim temporibus aperiam? Esse veritatis, iusto </p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for updates</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- modal itself -->
+      <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt voluptas inventore maiores officia eligendi assumenda iure nesciunt ex unde vero ducimus magni
+              </p>
+              <label for="modal-email" class="form-label">Your email address:</label>
+              <input type="text" placeholder="e.g.hurleywflow@gmail.com" class="form-control" id="modal-email">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>l
+		</main>
+		<footer>
+      <!-- Footer -->
+      <footer class='bg-dark p-5 text-white text-center position-relative'>
+      <div class='container'>
+      <p class='lead'>Coppyright &copy; 2021 Hurley eBook</p>
+      <a href='#' class='position-absolute bottom-0 end-0 p-5'>
+      <i class='bi bi-arrow-up-circle h1'></i>
+      </a>
+      </div>
+      </footer>
+    </footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="./stylebook.css"></script>
+    <!-- tooltip-script add the end of the html page -->
+    <script>
+      const tooltips = document.querySelectorAll(”.tt”);
+      tooltips.forEach(t => {new bootstrap.Tooltip(t)})
+    </script>
+	</body>
+</html>

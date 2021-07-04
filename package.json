@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hurleywflow/bootstrap_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hurleywflow/bootstrap_project/issues"
+  },
+  "homepage": "https://github.com/Hurleywflow/bootstrap_project#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
